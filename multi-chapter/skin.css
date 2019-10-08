@@ -1,0 +1,32 @@
+/* Tables for ongoing multi-chapter podfics */
+#workskin table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#workskin table,
+#workskin td,
+#workskin th {
+  border: 1px solid #dddddd;
+}
+
+#workskin tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+#workskin tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+#workskin th {
+  background-color: #474747;
+  font-weight: bold;
+  color: white;
+}
+
+/* To wrap the table in to make it smaller if it's way wider than needs be */
+#workskin .narrow {
+  width: auto;
+  max-width: 500px;
+  margin: auto;
+}
