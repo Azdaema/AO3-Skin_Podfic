@@ -1,0 +1,74 @@
+#workskin .podfic {
+  width: auto;
+  max-width: 900px;
+  margin: auto;
+}
+
+#workskin .podfic p {
+  margin: 0px;
+}
+
+#workskin .podfic .cover {
+  display: inline-block;
+  float: left;
+  margin-right: 30px;
+  width: 100%;
+  max-width: 450px;
+}
+
+#workskin .podfic .cover img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#workskin .podfic .content {
+  display: inline-block;
+  max-width: 100%;
+  width: 400px;
+}
+
+#workskin .podfic .content iframe {
+  width: 100%;
+  height: 30px;
+}
+
+#workskin .podfic .content ul {
+  margin: 0;
+  padding: 0;
+}
+
+#workskin .podfic .content li {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#workskin .podfic .content h3 {
+  margin-top: 20px;
+}
+
+
+/* Tables for ongoing multi-chapter podfics */
+
+#workskin table {
+  border-collapse: collapse;
+}
+
+#workskin table,
+#workskin td,
+#workskin th {
+  border: 1px solid #dddddd;
+}
+
+#workskin tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+#workskin tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+#workskin th {
+  background-color: #474747;
+  font-weight: bold;
+  color: white;
+}
