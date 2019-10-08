@@ -1,16 +1,25 @@
-/* Centered podfic section wrapper */
+/*
+ *  Centered podfic section wrapper
+ */
 #workskin .podfic {
   width: auto;
   max-width: 900px;
   margin: auto;
 }
 
-/* AO3 auto-format will put a bunch of <p></p> in the middle. Neutralize those. */
+/*
+ *  AO3 expects all posts to contain fic, which is formatted in paragraphs.
+ *  When you post something that doesn't (for example, podfic) it will still try to stick paragraph tags around it.
+ *  So I neutralize it, setting it to 0.
+ *  Now AO3 can stick <p></p> wherever it wants, and they won't do anything.
+ */
 #workskin .podfic p {
   margin: 0px;
 }
 
-/* Cover art, on the left */
+/*
+ *  Wrapper for the cover art section, on the left
+ */
 #workskin .podfic .cover {
   display: inline-block;
   float: left;
@@ -24,20 +33,27 @@
   border-radius: 20px;
 }
 
-/* Podfic details, on the right */
+/*
+ *  Wrapper for the podfic details section, on the right
+ */
 #workskin .podfic .content {
   display: inline-block;
   max-width: 100%;
   width: 400px;
 }
 
-/* For embedding audio from archive.org */
+/*
+ *  For embedding audio hosted on archive.org
+ */
 #workskin .podfic .content iframe {
   width: 100%;
   height: 30px;
 }
 
-/* Removing margins so listing the podfic's details takes less space */
+/*
+ *  Removing margins for the tags I use to list the podfic's details,
+ *  so that part takes less space vertically and can be about the same height as the cover art.
+ */
 #workskin .podfic .content ul {
   margin: 0;
   padding: 0;
