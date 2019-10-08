@@ -54,6 +54,7 @@
 /* Tables for ongoing multi-chapter podfics */
 #workskin table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 #workskin table,
@@ -74,4 +75,10 @@
   background-color: #474747;
   font-weight: bold;
   color: white;
+}
+
+/* To wrap the table in, to make it smaller if there's a bunch of extra space */
+#workskin .narrow {
+  width: 40%;
+  margin: auto;
 }
