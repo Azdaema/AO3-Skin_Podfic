@@ -1,9 +1,11 @@
+/* Centered podfic section wrapper */
 #workskin .podfic {
   width: auto;
   max-width: 900px;
   margin: auto;
 }
 
+/* AO3 auto-format will put a bunch of <p></p> in the middle. Neutralize those. */
 #workskin .podfic p {
   margin: 0px;
 }
