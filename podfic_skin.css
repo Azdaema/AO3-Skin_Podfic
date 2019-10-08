@@ -8,6 +8,7 @@
   margin: 0px;
 }
 
+/* Cover art, on the left */
 #workskin .podfic .cover {
   display: inline-block;
   float: left;
@@ -21,17 +22,20 @@
   border-radius: 20px;
 }
 
+/* Podfic details, on the right */
 #workskin .podfic .content {
   display: inline-block;
   max-width: 100%;
   width: 400px;
 }
 
+/* For embedding audio from archive.org */
 #workskin .podfic .content iframe {
   width: 100%;
   height: 30px;
 }
 
+/* Removing margins so listing the podfic's details takes less space */
 #workskin .podfic .content ul {
   margin: 0;
   padding: 0;
@@ -48,7 +52,6 @@
 
 
 /* Tables for ongoing multi-chapter podfics */
-
 #workskin table {
   border-collapse: collapse;
 }
