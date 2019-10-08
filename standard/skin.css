@@ -1,5 +1,5 @@
 /*
- *  Centered podfic section wrapper
+ *  Whole podfic section wrapper.
  */
 #workskin .podfic {
   width: auto;
@@ -18,7 +18,7 @@
 }
 
 /*
- *  Wrapper for the cover art section, on the left
+ *  Wrapper for the cover art section on the left.
  */
 #workskin .podfic .cover {
   display: inline-block;
@@ -28,13 +28,17 @@
   max-width: 450px;
 }
 
+/*
+ *  The image in the cover section takes up the full 450px space,
+ *  and has rounded corners, a la cover art on phones.
+ */
 #workskin .podfic .cover img {
   width: 100%;
   border-radius: 20px;
 }
 
 /*
- *  Wrapper for the podfic details section, on the right
+ *  Wrapper for the podfic details section on the right.
  */
 #workskin .podfic .content {
   display: inline-block;
@@ -43,7 +47,8 @@
 }
 
 /*
- *  For embedding audio hosted on archive.org
+ *  For embedding audio hosted on archive.org.
+ *  They default to making the height bigger, for playlists. This makes it just tall enough for one.
  */
 #workskin .podfic .content iframe {
   width: 100%;
