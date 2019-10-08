@@ -1,0 +1,36 @@
+#workskin .podfic {
+  width: auto;
+  max-width: 500px;
+  margin: auto;
+}
+
+#workskin .podfic p {
+  margin: 0px;
+}
+
+#workskin .podfic .content {
+  display: inline-block;
+  max-width: 100%;
+  width: 500px;
+}
+
+/* For embedding audio from archive.org */
+#workskin .podfic .content iframe {
+  width: 100%;
+  height: 30px;
+}
+
+/* Removing margins so listing the podfic's details takes less space */
+#workskin .podfic .content ul {
+  margin: 0;
+  padding: 0;
+}
+
+#workskin .podfic .content li {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#workskin .podfic .content h3 {
+  margin-top: 20px;
+}
