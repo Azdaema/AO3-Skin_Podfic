@@ -1,32 +1,47 @@
-/* Tables for ongoing multi-chapter podfics */
+/*
+ *  Tables! For ongoing, multi-chapter podfics
+ */
 #workskin table {
-  border-collapse: collapse;
-  width: 100%;
+	border-collapse: collapse;
+	width: 100%;
 }
 
+/*
+ *  Cell borders
+ */
 #workskin table,
 #workskin td,
 #workskin th {
-  border: 1px solid #dddddd;
+	border: 1px solid #dddddd;
 }
 
+/*
+ *  Making every other row a soft gray, so it's easier to read without getting confused.
+ */
 #workskin tr:nth-child(even) {
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 #workskin tr:nth-child(odd) {
-  background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
 
+/*
+ *  Making <th></th> elements dark gray with bold white text.
+ *  Useful for headers and footers.
+ */
 #workskin th {
-  background-color: #474747;
-  font-weight: bold;
-  color: white;
+	background-color: #474747;
+	font-weight: bold;
+	color: white;
 }
 
-/* To wrap the table in to make it smaller if it's way wider than needs be */
+/* 
+ *  Table details to 100% width.
+ *  If that's way wider than needs be, wrap it in this to make it max 500px
+ */
 #workskin .narrow {
-  width: auto;
-  max-width: 500px;
-  margin: auto;
+	width: auto;
+	max-width: 500px;
+	margin: auto;
 }
