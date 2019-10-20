@@ -56,8 +56,8 @@
 }
 
 /*
- *	Removing margins for the tags I use to list the podfic's details,
- *	so that part takes less space vertically and can be about the same height as the cover art.
+ *  Removing margins for the tags I use to list the podfic's details,
+ *  so that part takes less space vertically and can be about the same height as the cover art.
  */
 #workskin .podfic .content ul {
 	margin: 0;
