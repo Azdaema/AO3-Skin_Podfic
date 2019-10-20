@@ -1,14 +1,10 @@
 /*
- *  Tables! For ongoing, multi-chapter podfics
+ *  Cell borders
  */
 #workskin table {
 	border-collapse: collapse;
-	width: 100%;
 }
 
-/*
- *  Cell borders
- */
 #workskin table,
 #workskin td,
 #workskin th {
