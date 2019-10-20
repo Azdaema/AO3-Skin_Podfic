@@ -1,19 +1,25 @@
+/*
+ *  Flex-boxes really are the "proper" way to do this, but AO3 doesn't allow them.
+ *  If they ever do, this would be simpler and cleaner.
+ *  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ */
+
 #workskin .podfic {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+	display: flex;           /* it's a flex-box container */
+	flex-direction: row;     /* default to stacking items horizontally */
+	flex-wrap: wrap;         /* wrap if screen isn't wide enough */
+	justify-content: center; /* horizontally align items to center */
+	align-items: center;     /* vertically align items to center */
+	align-content: center;   /* vertically aligns items of different heights so their centers line up */
 }
 
 /*
- *  Cover art section
+ *  Cover art section (450px)
  */
 #workskin .podfic .cover {
-	flex-grow: 0;
-	flex-shrink: 1;
-	flex-basis: 450px;
+	flex-grow: 0;      /* item CANNOT grow to take up extra space */
+	flex-shrink: 1;    /* item CAN shrink to fit space. both elemnts are 1, so they strink equally. */
+	flex-basis: 450px; /* default size */
 	margin: 10px;
 }
 
@@ -23,7 +29,7 @@
 }
 
 /*
- *  Podfic details section
+ *  Podfic details section (400px)
  */
 #workskin .podfic .content {
 	flex-grow: 0;
