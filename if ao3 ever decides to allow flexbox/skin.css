@@ -1,0 +1,33 @@
+#workskin .podfic {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+/*
+ *  Cover art section
+ */
+#workskin .podfic .cover {
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 450px;
+	margin: 10px;
+}
+
+#workskin .podfic .cover img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+/*
+ *  Podfic details section
+ */
+#workskin .podfic .content {
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 400px;
+	margin: 10px;
+}
