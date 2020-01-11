@@ -38,6 +38,14 @@
 }
 
 /*
+ *  Add a narrow black border around cover art if you want,
+ *  such as for cover art with a white background, to make the edges clear
+ */
+#workskin .border img {
+	border: 0.75px solid black;
+}
+
+/*
  *  Wrapper for the podfic details section on the right.
  */
 #workskin .podfic .content {
