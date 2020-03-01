@@ -1,3 +1,49 @@
+/**************************************************
+*	wrapper
+**************************************************/
+.podfic {
+	display: block;
+	text-align: center;/* center panels in middle of screen */
+	letter-spacing: 25px;/* spacing between panels */
+}
+
+/**************************************************
+*	panels
+**************************************************/
+.podfic .panel {
+	display: inline-block;
+	max-width: 450px;
+	vertical-align: middle;/* aligns panels along vertical middle */
+	/* Text is normal */
+	letter-spacing: initial;
+	text-align: left;
+}
+
+/* Be a bit bigger if there's no cover art */
+.podfic .panel:only-of-type {
+	width: 100%;
+}
+
+/**************************************************
+*	cover art
+**************************************************/
+.podfic .panel img {
+	width: 100%;
+	border-radius: 20px;
+}
+.podfic .border img {
+  border: 0.75px solid black;
+}
+
+/**************************************************
+*	embedded audio
+**************************************************/
+/* fill panel width */
+.podfic .panel iframe,
+.podfic .panel audio {
+	width: 100%;
+}
+
 /* SoundCloud */
 iframe[src^="https://w.soundcloud.com/player/"] {
 	height: 166px;
