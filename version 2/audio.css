@@ -1,66 +1,32 @@
-/**************************************************
-*	wrapper
-**************************************************/
-.podfic {
-	display: block;
-	text-align: center;/* center panels in middle of screen */
-	letter-spacing: 25px;/* spacing between panels */
-}
-
-/**************************************************
-*	panels
-**************************************************/
-.podfic .panel {
-	display: inline-block;
-	max-width: 450px;
-	vertical-align: middle;/* aligns panels along vertical middle */
-	/* Text is normal */
-	letter-spacing: initial;
-	text-align: left;
-}
-
-/* Be a bit bigger if there's no cover art */
-.podfic .panel:only-of-type {
+/* fill available width */
+iframe,
+audio {
 	width: 100%;
 }
 
 /**************************************************
-*	cover art
+*	SoundCloud
 **************************************************/
-.podfic .panel img {
-	width: 100%;
-	border-radius: 20px;
-}
-.podfic .border img {
-  border: 0.75px solid black;
-}
-
-/**************************************************
-*	embedded audio
-**************************************************/
-/* fill panel width */
-.podfic .panel iframe,
-.podfic .panel audio {
-	width: 100%;
-}
-
-/* SoundCloud */
+/* Default */
 iframe[src^="https://w.soundcloud.com/player/"] {
 	height: 166px;
 }
 
-iframe[src^="https://w.soundcloud.com/player/"].mini,
-iframe[src^="https://w.soundcloud.com/player/"][height="mini"] {
+/* Mini */
+iframe[src^="https://w.soundcloud.com/player/"].mini {
 	height: 20px;
 }
 
+/* Visual */
 iframe[src^="https://w.soundcloud.com/player/"][src*="&visual=true"] {
 	height: 300px;
 	width: auto;
 }
 
 
-/* Archive.org */
+/**************************************************
+*	Archive.org
+**************************************************/
 iframe[src^="https://archive.org/embed/"]:not([src*="playlist=1"]) {
 	height: 30px;
 }
@@ -75,13 +41,16 @@ iframe[src^="https://archive.org/embed/"][src*="list_height=400"] {height: 430px
 iframe[src^="https://archive.org/embed/"][src*="list_height=450"] {height: 480px;}
 iframe[src^="https://archive.org/embed/"][src*="list_height=500"] {height: 530px;}
 
-/* Dewplayer */
-embed[src="https://archiveofourown.org/system/dewplayer/dewplayer-vol.swf"],
+
+/**************************************************
+*	Dewplayer
+**************************************************/
 embed[src="https://archiveofourown.org/system/dewplayer/dewplayer.swf"] {
 	height: 21px;
 	width: 200px;
 }
 embed[src="https://archiveofourown.org/system/dewplayer/dewplayer-vol.swf"] {
+	height: 21px;
 	width: 240px;
 }
 
