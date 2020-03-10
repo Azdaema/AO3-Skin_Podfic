@@ -47,12 +47,12 @@ iframe[src^="https://archive.org/embed/"][src*="list_height=500"] {height: 530px
 /**************************************************
 *	Dewplayer
 **************************************************/
-embed[src="https://archiveofourown.org/system/dewplayer/dewplayer.swf"] {
+embed[src="https://archiveofourown.org/system/dewplayer/dewplayer.swf"],
+embed[src="https://archiveofourown.org/system/dewplayer/dewplayer-vol.swf"] {
 	height: 21px;
 	width: 200px;
 }
 embed[src="https://archiveofourown.org/system/dewplayer/dewplayer-vol.swf"] {
-	height: 21px;
 	width: 240px;
 }
 
