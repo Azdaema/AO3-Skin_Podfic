@@ -1,0 +1,108 @@
+.dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	background: none;
+	text-align: left;
+	z-index: 55;
+	font-size: 0.925rem;
+}
+
+.dropdown .menu {
+	display: none;
+}
+
+.dropdown:hover .menu {
+	background: #ddd;
+	display: block;
+	width: max-content;
+	padding: 0.25em;
+	margin: 0;
+	position: absolute;
+}
+
+
+/* Button! */
+.dropdown.hosting::before {
+	content: "Hosting";
+}
+
+.dropdown::before {
+	background: #eee;
+	color: #444;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0.25em 0.75em;
+	white-space: nowrap;
+	overflow: visible;
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px solid #bbb;
+	border-bottom: 1px solid #aaa;
+	background-image: linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
+	border-radius: 0.25em;
+}
+
+.dropdown:hover::before {
+	color: #900;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	box-shadow: inset 2px 2px 2px #bbb;
+}
+
+/* List items */
+.dropdown li {
+	display: block;
+	border-bottom: 1px solid #888;
+	margin: 0;
+}
+
+.dropdown li:last-child {
+	border-bottom: none;
+}
+
+.dropdown a {
+	background: transparent;
+	display: block;
+	padding: 0.75em 0.5em 0.5em;
+	text-decoration: none;
+	border: none;
+	color: #111 !important;
+}
+
+.dropdown a:hover,
+.dropdown a:focus {
+	background: rgba(255, 255, 255, 0.25);
+	border-radius: 0.25em;
+	color: #900 !important;
+}
+
+/* Logos by website */
+.hosting a:before {
+	content: "";
+	margin-right: 0.5em;
+	width: 1.5em;
+	height: 1em;
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.hosting a[href^="https://www.mediafire.com/"]:before {
+	background-image: url("https://raw.githubusercontent.com/Azdaema/AO3-Skin_Podfic/master/logos/MediaFire.png");
+}
+
+.hosting a[href^="https://archive.org/"]::before {
+	background-image: url("https://raw.githubusercontent.com/Azdaema/AO3-Skin_Podfic/master/logos/Internet_Archive.png");
+}
+
+.hosting a[href^="https://drive.google.com/"]::before {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_Drive_logo.png/600px-Google_Drive_logo.png);
+}
+
+.hosting a[href^="https://soundcloud.com/"]::before {
+	background-image: url("https://raw.githubusercontent.com/Azdaema/AO3-Skin_Podfic/master/logos/soundcloud.png");
+}
