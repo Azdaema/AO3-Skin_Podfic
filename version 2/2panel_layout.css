@@ -1,0 +1,57 @@
+/*
+	Wrapper
+*/
+.podfic {
+	display: block;
+	text-align: center;
+	letter-spacing: 25px; /* column between panels */
+}
+
+/* neutralize <p> because AO3 will try to wrap everything in them */
+.podfic p {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*
+	Panels
+*/
+.podfic .cover,
+.podfic .content {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 450px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  /* make text normal again */
+	letter-spacing: initial;
+	text-align: left;
+}
+
+/*
+	Cover art
+*/
+.podfic .cover img {
+	width: 100%;
+	border-radius: 20px;
+}
+/* if you want to put a narrow border around art with a black background, to make it pop */
+.podfic .border img {
+	border: 0.75px solid black;
+}
+
+/*
+	Content
+*/
+.podfic .content {
+	width: 100%;
+	padding-top: 1.5em;/* so on mobile, there's a bit of space */
+	padding-bottom: 1.5em;/* so it's not right against the "↑ Top Add To Collections Bookmark Comments" buttons" */
+}
+
+/* if there's no cover art, then it's a bit wider. else, a bit more narrow */
+.podfic .cover~.content {
+	max-width: 350px;
+}
