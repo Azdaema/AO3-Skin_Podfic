@@ -1,6 +1,10 @@
-/* fill available width */
-iframe,
-audio {
+/*
+	class="userstuff" is the part of the page where you put in your content.
+	If it's wrapped in something (div, table, whatever) then it grows to fill the total width.
+	If it's not, if it's just loose, then you'd maybe not want it to be as wide as the full text space.
+*/
+:not(.userstuff)>iframe,
+:not(.userstuff)>audio {
 	width: 100%;
 }
 
