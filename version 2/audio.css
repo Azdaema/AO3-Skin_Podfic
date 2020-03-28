@@ -47,6 +47,11 @@ iframe[src^="https://archive.org/embed/"][src*="list_height=400"] {height: 430px
 iframe[src^="https://archive.org/embed/"][src*="list_height=450"] {height: 480px;}
 iframe[src^="https://archive.org/embed/"][src*="list_height=500"] {height: 530px;}
 
+/* just for fun */
+iframe[src^="https://archive.org/embed/"]:not([src*="playlist=1"]).round {
+	border-radius: 15px;
+}
+
 
 /**************************************************
 *	Dewplayer
