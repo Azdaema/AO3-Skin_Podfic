@@ -2,16 +2,11 @@
 a[href^="/works/"]:not([href*="/chapters/"]) {
 	font-style: italic;
 }
+.series.module a {
+	font-style: unset;/* don't italicize "← Previous Work" */
+}
 
 /* Don't show "(See the end of the work for notes.)" since podfic posts are usually so short */
 .notes.module .jump {
 	display: none;
-}
-
-/* Series of works */
-.series.module {
-	text-align: center;
-}
-.series.module a {
-	font-style: unset;/* don't italicize "← Previous Work" */
 }
