@@ -91,18 +91,7 @@
 	background-size: contain;
 }
 
-.hosting a[href^="https://www.mediafire.com/"]:before {
-	background-image: url("https://raw.githubusercontent.com/Azdaema/AO3-Skin_Podfic/master/logos/MediaFire.png");
-}
-
-.hosting a[href^="https://archive.org/"]::before {
-	background-image: url("https://raw.githubusercontent.com/Azdaema/AO3-Skin_Podfic/master/logos/Internet_Archive.png");
-}
-
-.hosting a[href^="https://drive.google.com/"]::before {
-	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_Drive_logo.png/600px-Google_Drive_logo.png);
-}
-
-.hosting a[href^="https://soundcloud.com/"]::before {
-	background-image: url("https://raw.githubusercontent.com/Azdaema/AO3-Skin_Podfic/master/logos/soundcloud.png");
-}
+.hosting a[href^="https://www.mediafire.com/"]:before	{background-image: url("https://raw.githubusercontent.com/Azdaema/AO3-Skin_Podfic/master/logos/MediaFire.png");}
+.hosting a[href^="https://archive.org/"]::before	{background-image: url("https://raw.githubusercontent.com/Azdaema/AO3-Skin_Podfic/master/logos/Internet_Archive.png");}
+.hosting a[href^="https://drive.google.com/"]::before	{background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_Drive_logo.png/600px-Google_Drive_logo.png);}
+.hosting a[href^="https://soundcloud.com/"]::before	{background-image: url("https://raw.githubusercontent.com/Azdaema/AO3-Skin_Podfic/master/logos/soundcloud.png");}
