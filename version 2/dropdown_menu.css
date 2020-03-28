@@ -1,3 +1,6 @@
+/**************************************************
+*	Dropdown menu
+**************************************************/
 .dropdown {
 	position: relative;
 	display: inline-block;
@@ -20,12 +23,15 @@
 	padding: 0.25em;
 	margin: 0;
 	position: absolute;
+	right: 0;
 }
 
-
-/* Button! */
+/**************************************************
+*	Button
+**************************************************/
 .dropdown.hosting::before {
 	content: "Hosting";
+	max-width: 10em;
 }
 
 .dropdown::before {
@@ -52,19 +58,20 @@
 	box-shadow: inset 2px 2px 2px #bbb;
 }
 
-/* List items */
-.dropdown li {
+/**************************************************
+*	List items
+**************************************************/
+.dropdown .menu li {
 	display: block;
 	border-bottom: 1px solid #888;
 	margin: 0;
 }
 
-.dropdown li:last-child {
+.dropdown .menu li:last-child {
 	border-bottom: none;
 }
 
-.dropdown a {
-	background: transparent;
+.dropdown .menu a {
 	display: block;
 	padding: 0.75em 0.5em 0.5em;
 	text-decoration: none;
@@ -72,14 +79,16 @@
 	color: #111 !important;
 }
 
-.dropdown a:hover,
-.dropdown a:focus {
+.dropdown .menu a:hover,
+.dropdown .menu a:focus {
 	background: rgba(255, 255, 255, 0.25);
 	border-radius: 0.25em;
 	color: #900 !important;
 }
 
-/* Logos by website */
+/**************************************************
+*	Logos by website
+**************************************************/
 .hosting a:before {
 	content: "";
 	margin-right: 0.5em;
