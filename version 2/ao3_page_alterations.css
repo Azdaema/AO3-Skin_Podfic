@@ -1,14 +1,19 @@
-/* Italicize the titles of other AO3 fics, when linked */
-a[href^="/works/"]:not([href*="/chapters/"]) {
-	font-style: italic;
-}
-.series.module a {
-	font-style: unset;/* don't italicize "← Previous Work" */
-}
-
 /* Don't show "(See the end of the work for notes.)" since podfic posts are usually so short */
 .notes.module .jump {
 	display: none;
+}
+
+/**************************************************
+* Italicize work titles
+**************************************************/
+/* Italicize the titles of other AO3 works, when linked */
+a[href^="/works/"]:not([href*="/chapters/"]) {
+	font-style: italic;
+}
+
+/* don't italicize "← Previous Work" if it's part of a series */
+.series.module a {
+	font-style: unset;
 }
 
 /**************************************************
