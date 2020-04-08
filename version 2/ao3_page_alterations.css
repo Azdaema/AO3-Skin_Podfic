@@ -10,3 +10,52 @@ a[href^="/works/"]:not([href*="/chapters/"]) {
 .notes.module .jump {
 	display: none;
 }
+
+/**************************************************
+* Notes and associations module
+**************************************************/
+.notes.module {
+	display: table;
+	width: 100%;
+}
+
+/* turn off "notes" heading in case there are no notes */
+.notes.module .heading {
+	display: none;
+}
+
+/* associations at bottom */
+.notes.module .associations {
+	display: table-footer-group;
+}
+
+/* notes at top */
+.notes.module blockquote.userstuff {
+	display: table-header-group;
+}
+
+.notes.module .associations > *,
+.notes.module blockquote.userstuff > * {
+	padding-left: 0.643em;
+}
+
+/* <h3> emulate */
+.notes.module > *::before {
+	font-family: Georgia, serif;
+	font-weight: 400;
+	font-size: 1.286em;
+	line-height: 1;
+	margin: 0.5375em 0;
+	display: block;
+	border-bottom: 1px solid;
+}
+
+/* associations header */
+.notes.module .associations::before {
+	content: "Associations:";
+}
+
+/* Notes header only if there actually are notes */
+.notes.module blockquote.userstuff::before {
+	content: "Notes:";
+}
