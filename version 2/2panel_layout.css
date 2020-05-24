@@ -8,13 +8,13 @@
 }
 
 /* neutralize <p> because AO3 will try to wrap everything in them */
+p:empty {
+	display: none !important;
+}
 .podfic p {
 	display: inline-block;
 	margin: 0px;
 	padding: 0px;
-}
-p:empty {
-	display: none;
 }
 
 /*
