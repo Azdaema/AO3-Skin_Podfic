@@ -13,6 +13,9 @@
 	margin: 0px;
 	padding: 0px;
 }
+p:empty {
+	display: none;
+}
 
 /*
 	Panels
